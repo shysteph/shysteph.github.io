@@ -1,7 +1,9 @@
 <html>
   <head>
     <script>
-      window.location = window.location.search.substring(1)
+      if(window.location.search.length > 2) {
+        window.location = window.location.search.substring(1)
+      }
     </script>
   </head>
   <body>Stuff</body>
